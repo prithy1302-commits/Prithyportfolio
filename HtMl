@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Background Color Transition</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: lightblue;
+      transition: background-color 2s ease; /* Smooth transition */
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background-color: darkblue;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.5s ease;
+    }
+
+    button:hover {
+      background-color: royalblue;
+    }
+
+    /* Change body background on class toggle */
+    .changed {
+      background-color: lightcoral;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="document.body.classList.toggle('changed')">
+    Change Background
+  </button>
+</body>
+</html>
